@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "lib": ["esnext", "dom"],
+    "outDir": "./build",
+    "rootDir": "src",
+    "strictPropertyInitialization": false,
+    "declaration": true,
+    "declarationMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "preserveConstEnums": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "target": "ESNext",
+    "exactOptionalPropertyTypes": true,
+    "useUnknownInCatchVariables": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "@/tests/*": ["tests/*"]
+    },
+    "types": ["vitest/globals"]
+  },
+  "include": [
+    "src/**/*",
+    "lib/index.d.ts" // declaration file path
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+  ]
+}
